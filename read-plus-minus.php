@@ -18,7 +18,7 @@ function read_plus_minus( $attr, $content ) {
     $string .= '  <span class="rpm_title">';
     $string .= '&plus;';
     $string .= '</span><div class="rpm_body" style="display:none">';
-    $string .= $content;
+    $string .= do_shortcode($content);
     $string .= '</div></div>';
     return $string;
 }
