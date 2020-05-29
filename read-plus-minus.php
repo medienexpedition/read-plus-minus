@@ -15,11 +15,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 add_shortcode( 'rpm', 'read_plus_minus' );
 function read_plus_minus( $attr, $content ) {
     $string = '<div class="read-plus-minus">';
-    $string .= '  <span class="rpm_title">';
-    $string .= '&plus;';
-    $string .= '</span><div class="rpm_body" style="display:none">';
+    $string .= '  <button class="rpm_title">';
+    $string .= '    &plus;';
+    $string .= '  </button><div class="rpm_body" style="display:none">';
     $string .= do_shortcode($content);
-    $string .= '</div></div>';
+    $string .= '</span></div>';
     return $string;
 }
 
